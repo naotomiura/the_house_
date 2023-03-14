@@ -1071,7 +1071,6 @@ body {
 }
 
 /* construction-detail */
-
 .construction-detail_top_kv-img-wrap {
   height: 100vh;
   background: url("../img/works/works_1.jpg") top center / cover;
@@ -1134,6 +1133,10 @@ body {
 
 .construction-detail_img_wrap:not(:first-child){
   margin-top: 6px;
+}
+
+.construction-detail_img-detail-container{
+  display: none;
 }
 
 @media screen and (min-width: 1080px) {
@@ -1223,5 +1226,9 @@ body {
     font-size: 8px;
     width: 100%;
     border-collapse: collapse;
+  }
+
+  .construction-detail_img-detail-container{
+    display: block;
   }
 }
