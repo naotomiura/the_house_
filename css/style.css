@@ -29,6 +29,10 @@ body {
     }
 }
 
+.u_dp-n__sp {
+  display: none;
+}
+
 /* ---------- module ---------- */
 
 .top_kv-img-wrap {
@@ -372,81 +376,6 @@ body {
 }
 
 
-
-
-
-/* construction-sub */
-
-.construction-detail_top_kv-img-wrap {
-  height: 100vh;
-  background: url("../img/works/works_1.jpg") top center / cover;
-}
-
-.construction-detail_container{
-  margin: 33px 26px 44px 26px;
-}
-
-.construction-detail-tit{
-  font-size: 16px;
-}
-
-.construction-detail-sub-tit{
-  margin-top: 10px;
-  font-size: 12px;
-}
-
-.construction-detail-table{
-  margin-top: 36px;
-  padding-left: 18.6px;
-  font-size: 8px;
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.construction-detail-table-row1{
-  padding-left: 18.6px;
-  padding-right: 18.6px;
-  width: 100px;
-  text-align: center;
-  /* vertical-align: middle; */
-}
-
-.construction-detail-table-tr{
-  border-top: 0.2px solid black;
-  margin-top: 17.2px;
-}
-
-.construction-detail-table-row2{
-  
-}
-
-.construction-detail-consept-tit{
-  margin-top: 36.7px;
-  font-size: 20px;
-}
-
-.construction-detail-consept-txt{
-  margin-top: 12px; 
-  font-size: 7px;
-}
-
-.construction-detail-point-tit{
-  margin-top: 19px; 
-  font-size: 20px;
-}
-
-.construction-detail-point-txt{
-  margin-top: 12px;  
-  font-size: 7px;
-}
-
-.construction-detail_img_wrap:not(:first-child){
-  margin-top: 6px;
-}
-
-
-
-
 /* ---------- sauna-page ---------- */
 .m_sauna_kv-wrap {
   position: relative;
@@ -653,6 +582,17 @@ body {
   position: relative;
 }
 
+@media screen and (min-width: 1080px) {
+  .sauna-custom_img-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sauna-custom_img {
+    width: 50%;
+  }
+}
+
 .sauna-custom_img-box::before {
   content: "";
   background-image: linear-gradient(#000, #000);
@@ -674,6 +614,17 @@ body {
   left: 6%;
 }
 
+@media screen and (min-width: 1080px) {
+  .sauna-custom_heading {
+    font-size: 59px;
+    line-height: 1.45;
+    text-align: center;
+    left: 50%;
+    top: 39%;
+    transform: translateX(-50%);
+  }
+}
+
 .sauna-custom_txt_upper, .sauna-custom_txt_lower {
   line-height: 1.67;
   font-size: 12px;
@@ -686,13 +637,42 @@ body {
   left: 6%;
 }
 
+@media screen and (min-width: 1080px) {
+  .sauna-custom_txt_upper {
+    font-size: 20px;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .sauna-custom_txt_lower {
   position: absolute;
   top: 80%;
   left: 6%;
 }
 
+@media screen and (min-width: 1080px) {
+  .sauna-custom_txt_lower {
+    font-size: 20px;
+    text-align: center;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 /* saua-price */
+@media screen and (min-width: 768px) {
+  .sauna-price {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 17px;
+  }
+}
+
 .sauna-price_img-box {
   text-align: center;
 }
@@ -701,14 +681,34 @@ body {
   height: 75%;
 }
 
+@media screen and (min-width: 1080px) {
+  .sauna-price_img_out {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .sauna-price_container {
   width: 78%;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1080px) {
+  .sauna-price_container {
+    width: 27%;
+    margin: 138px 0 0;
+  }
+}
+
 .sauna-price_ttl {
   font-size: 24px;
   line-height: 1.4;
+}
+
+@media screen and (min-width: 1080px) {
+  .sauna-price_ttl {
+    font-size: 40px;
+  }
 }
 
 .sauna-price_contents {
@@ -729,10 +729,22 @@ body {
   margin-left: 13px;
 }
 
+@media screen and (min-width: 1080px) {
+  .sauna-price_content_ttl {
+    font-size: 25px;
+  }
+}
+
 .sauna-price_content_txt {
   font-size: 14px;
   line-height: 1.7;
   margin-left: 13px;
+}
+
+@media screen and (min-width: 1080px) {
+  .sauna-price_content_txt {
+    font-size: 25px;
+  }
 }
 
 .sauna-price_content_txt-plus {
@@ -741,9 +753,21 @@ body {
   margin-top: 13px;
 }
 
+@media screen and (min-width: 1080px) {
+  .sauna-price_content_txt-plus {
+    font-size: 19px;
+  }
+}
+
 .sauna-price_content_note {
   font-size: 10px;
   margin-top: 31px;
+}
+
+@media screen and (min-width: 1080px) {
+  .sauna-price_content_note {
+    font-size: 16px;
+  }
 }
 
 .sauna-price_img_in {
@@ -757,6 +781,12 @@ body {
   font-size: 24px;
   text-align: center;
   margin-top: 35px;
+}
+
+@media screen and (min-width: 1080px) {
+  .sauna-contact_flow_ttl {
+    font-size: 40px;
+  }
 }
 
 .sauna-contact_flow_list {
@@ -773,6 +803,13 @@ body {
   padding-top: 7px;
   padding-bottom: 9px;
   position: relative;
+}
+
+@media screen and (min-width: 1080px) {
+  .sauna-contact_flow_item {
+    font-size: 23px;
+    width: 35%;
+  }
 }
 
 .sauna-contact_flow_item:not(:first-child) {
@@ -816,6 +853,12 @@ body {
   left: 50%;
 }
 
+@media screen and (min-width: 1080px) {
+  .sauna-contact_flow_item:nth-of-type(2)::after {
+    top: -48%;
+  }
+}
+
 .sauna-contact_flow_item:nth-of-type(3):before {
   content: "03";
   font-size: 24px;
@@ -837,6 +880,12 @@ body {
   position: absolute;
   top: -61%;
   left: 50%;
+}
+
+@media screen and (min-width: 1080px) {
+  .sauna-contact_flow_item:nth-of-type(3)::after {
+    top: -48%;
+  }
 }
 
 .sauna-contact_flow_item:nth-of-type(4):before {
@@ -862,6 +911,12 @@ body {
   left: 50%;
 }
 
+@media screen and (min-width: 1080px) {
+  .sauna-contact_flow_item:nth-of-type(4)::after {
+    top: -48%;
+  }
+}
+
 .sauna-contact_flow_item:nth-of-type(5):before {
   content: "05";
   font-size: 24px;
@@ -884,6 +939,25 @@ body {
   position: absolute;
   top: -60%;
   left: 50%;
+}
+
+@media screen and (min-width: 1080px) {
+  .sauna-contact_flow_item:nth-of-type(5)::after {
+    top: -48%;
+  }
+}
+
+.sauna-price_img_in__pc {
+  display: none;
+}
+
+@media screen and (min-width: 1080px) {
+  .sauna-price_img_in__pc {
+    display: block;
+    width: 62%;
+    margin: 0 auto;
+    margin-top: 107px;
+  }
 }
 
 .sauna-contact_txt_wrapper {
@@ -913,6 +987,12 @@ body {
   margin: 0 auto;
   margin-top: 37px;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1080px) {
+  .sauna-contact_btn {
+    width: 37%;
+  }
 }
 
 .sauna-contact_btn-txt {
