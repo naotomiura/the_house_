@@ -19,6 +19,18 @@ body {
   letter-spacing: 0.2em;
   color: var(--black-color2);
 }
+/* ---------- layout ---------- */
+
+
+/* ---------- utility ---------- */
+@media screen and (min-width: 1080px) {
+    .u_dp-n {
+        display: none;
+    }
+}
+
+/* ---------- module ---------- */
+
 .top_kv-img-wrap {
   height: 100vh;
   background: url("../img/top/top_kv.jpg") top center / cover;
