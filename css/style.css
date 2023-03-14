@@ -1069,3 +1069,159 @@ body {
   letter-spacing: 0.1em;
   padding-bottom: 34px;
 }
+
+/* construction-detail */
+
+.construction-detail_top_kv-img-wrap {
+  height: 100vh;
+  background: url("../img/works/works_1.jpg") top center / cover;
+}
+
+.construction-detail_container{
+  margin: 33px 26px 44px 26px;
+}
+
+.construction-detail-tit{
+  font-size: 16px;
+  font-family: "GFS Didot", serif;
+}
+
+.construction-detail-sub-tit{
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.construction-detail-table{
+  margin-top: 36px;
+  padding-left: 18.6px;
+  font-size: 8px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.construction-detail-table-row1{
+  padding-top: 8.2px;
+  padding-bottom: 8.4px;
+  /* width: 82px; */
+   width: 30%;
+  text-align: center;
+  /* vertical-align: middle; */
+}
+
+.construction-detail-table-tr{
+  border-top: 1.0px solid #707070;
+}
+
+.construction-detail-consept-tit{
+  margin-top: 36.7px;
+  font-size: 20px;
+}
+
+.construction-detail-consept-txt{
+  margin-top: 12px; 
+  font-size: 7px;
+}
+
+.construction-detail-point-tit{
+  margin-top: 19px; 
+  font-size: 20px;
+}
+
+.construction-detail-point-txt{
+  margin-top: 12px;  
+  font-size: 7px;
+}
+
+.construction-detail_img_wrap:not(:first-child){
+  margin-top: 6px;
+}
+
+@media screen and (min-width: 1080px) {
+  .construction-detail{
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .construction-detail_img-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 361px;
+  }
+
+  .construction-detail_img_wrap:not(:first-child){
+    margin-top: 186px;
+    
+  }
+  .construction-detail_img_wrap{
+    margin-top: 186px;
+  }
+
+  .construction-detail_img_wrap{
+    width: 16%;
+  }
+
+  .construction-detail-tit{
+    margin-top: 64px;
+    font-size: 40px;
+    font-family: "GFS Didot", serif;
+    text-align: center;
+  }
+  
+  .construction-detail-sub-tit{
+    margin-top: 5px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .construction-detail_container_wrapper_sp{
+    display: flex;
+    margin-top: 83px;
+  }
+
+  .construction-detail_container_sp{
+    /* margin: 0px 960px 44px 361px; */
+    display: flex;
+    flex-flow: column;
+    width: 29%;
+    margin: 0% 4% 0% 19%;
+	  /* flex-wrap: wrap; --折り返しの指定-- */
+  }
+
+  .construction-detail_flex-item-1 {
+    order: 4;
+  }
+  .construction-detail_flex-item-2 {
+    order: 2;
+  }
+  .construction-detail_flex-item-3 {
+    order: 3;
+  }
+
+  .construction-detail-consept-tit{
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  
+  .construction-detail-consept-txt{
+    margin-top: 24px; 
+    font-size: 7px;
+  }
+  
+  .construction-detail-point-tit{
+    margin-top: 129px; 
+    font-size: 20px;
+  }
+  
+  .construction-detail-point-txt{
+    margin-top: 24px;  
+    font-size: 7px;
+  }
+
+  .construction-detail-table{
+    margin-top: 123px;
+    padding-left: 18.6px;
+    font-size: 8px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+}
