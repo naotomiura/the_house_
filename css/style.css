@@ -1,0 +1,32 @@
+@charset "UTF-8";
+:root {
+  --black-color: #3a3a3a;
+  --black-color2: #3b3b3b;
+  --white-color: #fff;
+  --gray-color: #e1e1e1;
+  --gray-color2: #f0f0f0;
+  --footer-btn-color: #907c7c;
+  --footer-btn-color2: #c2bdb7;
+}
+:root {
+  --z-index-back: 0;
+  --z-index-default: 1;
+  --z-index-modal: 10;
+  --z-index-modal-mark: 50;
+}
+body {
+  font-family: "Noto Serif JP", serif;
+  letter-spacing: 0.2em;
+  color: var(--black-color2);
+}
+.top_kv-img-wrap {
+  height: 100vh;
+  background: url("../img/top/top_kv.jpg") top center / cover;
+  position: relative;
+}
+.top_kv-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
