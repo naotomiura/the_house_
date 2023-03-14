@@ -29,9 +29,6 @@ body {
     }
 }
 
-.u_dp-n_sp {
-  display: none;
-}
 
 /* ---------- module ---------- */
 
@@ -995,13 +992,19 @@ body {
 .sauna-contact_middle {
   margin-top: 30px;
   line-height: 1.67;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .sauna-contact_middle {
     font-size: 25px;
+    display: block;
+  }
+  .sauna-contact_middle__sp {
+    display: none;
   }
 }
+
 .sauna-contact_lower {
   margin-top: 30px;
   line-height: 1.67;
